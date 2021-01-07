@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_menu_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item_select"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:id="@+id/left_menu_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="热销水果"
+            android:textColor="#333333"
+            android:textSize="12dp" />
+
+        <!--数字角标-->
+        <TextView
+            android:id="@+id/tv_left_menu_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_shopping_cart_img"
+            android:layout_alignRight="@+id/left_menu_textview"
+            android:layout_marginRight="-8dp"
+            android:background="@drawable/shape_shopping_cart_num_bg"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="8dp"
+            android:visibility="invisible" />
+
+        <!--左侧竖线区域,选中展示-->
+        <View
+            android:id="@+id/v_left_menu_item_line"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:background="#fe3939"
+            android:layout_marginBottom="12dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
